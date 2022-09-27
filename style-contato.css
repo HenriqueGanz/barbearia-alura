@@ -1,0 +1,143 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+	background: #bbbbbb;
+	padding: 20px 0;
+	border-bottom: 10px solid #000000;
+	margin-bottom: 15px;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 28px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+footer {
+	background: url("bg.jpg");
+	text-align: center;
+	padding: 40px 0;
+	margin-top: 15px;
+}
+
+.copyright{
+	color: #FFFFFF;
+	text-size: 13px;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+	padding-left: 80px;
+	font-size: 30px;
+}
+
+form label, form legend {
+	display: block;
+	margin: 0 0 10px;
+	padding-top: 20px;
+}
+
+fieldset input {
+	width: 15px;
+	height: 15px;
+}
+fieldset select {
+	width: 100px;
+	height: 50px;
+}
+
+.input-padrao {
+	display:  block;
+	margin: 20px 0;
+	width: 35%;
+	padding: 10px 25px;
+}
+.checkbox {
+	width: 20px;
+	height: 20px;
+	margin-left: 25px;
+}
+
+.enviar {
+	margin: 10px 0;
+	width: 35%;
+	padding: 25px 0;
+	background: orange;
+	border: none;
+	transition: 0.5s all;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.1);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 5px solid #000000;
+	padding: 15px;
+}
+
+@media screen and (max-width: 480px) {
+	.caixa, .input-padrao {
+		width: auto;
+	}
+	main {
+		padding: none;
+		width: auto;
+	}
+	fieldset select {
+		padding-left: none;
+		margin-left: none;
+	}
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+	.checkbox {
+		display: block;
+	}
